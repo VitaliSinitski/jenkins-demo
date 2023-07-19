@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.1</version>
+		<version>2.6.10</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -49,6 +49,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://192.168.100.13:8085</url>
+					<server>tomcatServer</server>
+					<path>jenkins-demo</path>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
