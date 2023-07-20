@@ -50,16 +50,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
-				<configuration>
-					<url>http://192.168.100.13:8085</url>
-					<server>tomcatServer</server>
-					<path>jenkins-demo</path>
-				</configuration>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.apache.tomcat.maven</groupId>-->
+<!--				<artifactId>tomcat7-maven-plugin</artifactId>-->
+<!--				<version>2.2</version>-->
+<!--				<configuration>-->
+<!--					<url>http://192.168.100.13:8085</url>-->
+<!--					<server>tomcatServer</server>-->
+<!--					<path>jenkins-demo</path>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
 		</plugins>
 	</build>
 
